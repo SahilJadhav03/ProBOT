@@ -1,0 +1,63 @@
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+      body {
+        background-image: url('g.jpg');
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      #bp-web-widget-container {
+        max-height: 90%;
+        width: 481px;
+        margin: auto;
+        flex-grow: 1;
+      }
+      #bp-web-widget-container div {
+        height: 100%;
+      }
+      .webchatIframe {
+        position: relative !important;
+      }
+    </style>
+    <title>Dating chatbot-ProBOT</title>
+  </head>
+  <body>
+
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with Dating chatbot-ProBOT",
+      "botConversationDescription": "dating with probot",
+      "botId": "cf0be780-ad83-44c6-8a69-04caacfbb088",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "cf0be780-ad83-44c6-8a69-04caacfbb088",
+      "webhookId": "5779113c-5763-42ab-8867-595163f92251",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "Dating chatbot-ProBOT",
+      "avatarUrl": "https://i.pinimg.com/564x/a5/f9/66/a5f9662d9cb35efbf12be3c5030c3545.jpg",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/c9805f75-621f-453f-a8a7-81a84b5d19a8/v59424/style.css",
+      "frontendVersion": "v1",
+      "theme": "prism",
+      "themeColor": "#2563eb",
+      "hideWidget": true,
+      "disableAnimations": true,
+      "closeOnEscape": false,
+      "showConversationsButton": false,
+      "enableTranscriptDownload": false,
+      "className": "webchatIframe",
+      "containerWidth": "100%25",
+      "layoutWidth": "100%25",
+      "showCloseButton": false
+  });
+window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+</script>
+
+  </body>
+</html>
